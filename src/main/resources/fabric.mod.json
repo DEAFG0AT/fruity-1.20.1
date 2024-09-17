@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "fruity",
+	"version": "${version}",
+	"name": "Fruity",
+	"description": "A Farmer's Delight addon which adds fruit and fruit trees.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/fruity/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.deafgoat.fruity.Fruity"
+		],
+		"client": [
+			"net.deafgoat.fruity.FruityClient"
+		],
+		"fabric-datagen": [
+			"net.deafgoat.fruity.FruityDataGenerator"
+		]
+	},
+	"mixins": [
+		"fruity.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
